@@ -14,7 +14,7 @@ public class OpenApiConfig {
     OpenAPI customOpenAPI() {
 		return new OpenAPI()
 			.info(new Info()
-				.title("RESTFull API with Java 21 and Spring Boot 3.2.0")
+				.title("RESTFull API with Java 21 and Spring Boot 3.3.4")
 				.version("v1")
 				.description("Some description about your API")
 				.termsOfService("https://github.com/dantasdanddr/rest-with-spring-boot-java-erudio")

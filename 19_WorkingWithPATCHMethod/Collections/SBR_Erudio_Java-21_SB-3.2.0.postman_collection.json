@@ -30,7 +30,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/person/v1",
+							"raw": "{{baseUrl}}/api/person/v1?page=3&size=10&direction=asc",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -38,6 +38,20 @@
 								"api",
 								"person",
 								"v1"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "direction",
+									"value": "asc"
+								}
 							]
 						},
 						"description": "Finds all People"
@@ -1429,7 +1443,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJBRE1JTiIsIk1BTkFHRVIiXSwiaWF0IjoxNzAyMjUxMTE4LCJleHAiOjE3MDIyNTQ3MTgsInN1YiI6ImxlYW5kcm8iLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAifQ._0YaknJTI-HYKG6R5kt3or4vAKyQVxIl0yg8F0Kecr4",
+									"value": "{{accessToken}}",
 									"type": "string"
 								}
 							]
@@ -1442,7 +1456,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/book/v1",
+							"raw": "{{baseUrl}}/api/book/v1?page=3&direction=desc",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -1450,6 +1464,21 @@
 								"api",
 								"book",
 								"v1"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								},
+								{
+									"key": "size",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "direction",
+									"value": "desc"
+								}
 							]
 						},
 						"description": "Finds all Books"
