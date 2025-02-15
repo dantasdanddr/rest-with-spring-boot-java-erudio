@@ -12,8 +12,8 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] PATCH Method
-- [ ] Pagination
+- [x] PATCH Method
+- [x] Pagination
 - [ ] Files
 - [ ] Dockerizing App
 - [ ] Deploing App To AWS
